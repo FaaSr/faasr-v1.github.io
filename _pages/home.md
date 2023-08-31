@@ -9,7 +9,7 @@ excerpt: "FaaSr simplifies the development of event-driven, cloud-native workflo
 ---
 
 {::nomarkdown}<div class="background-white"><div class="center">{:/nomarkdown}
-### <i class="fas fa-cubes"></i> FaaSs is an open-source software for deploying function workflows written in R in FaaS clouds
+### <i class="fas fa-cubes"></i> FaaSr is an open-source software for deploying function workflows written in R in FaaS clouds
 
 Use FaaSr to write your code once and deploy event-driven, containerized workflows on your choice of FaaS platform - GitHub Actions, OpenWhisk, and AWS Lambda.
 
