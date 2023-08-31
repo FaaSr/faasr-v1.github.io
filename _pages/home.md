@@ -5,7 +5,7 @@ title: "Function-as-a-Service Package for R"
 header:
   overlay_color: "#303030"
   overlay_image: /assets/images/texture.png
-excerpt: "Run your R applications using FaaS clouds"
+excerpt: "FaaSr simplifies the development of event-driven, cloud-native workflows in R"
 ---
 
 {::nomarkdown}<div class="background-white"><div class="center">{:/nomarkdown}
