@@ -10,7 +10,7 @@ excerpt: "FaaSr simplifies the development of event-driven, cloud-native workflo
 
 {::nomarkdown}<div class="background-white"><div class="center">{:/nomarkdown}
 
-[FaaSr logo](/assets/images/faasr_logo_white.png)
+![FaaSr logo](/assets/images/faasr_logo_white.png)
 
 ### <i class="fas fa-cubes"></i> What is FaaSr?
 
