@@ -9,6 +9,9 @@ excerpt: "FaaSr simplifies the development of event-driven, cloud-native workflo
 ---
 
 {::nomarkdown}<div class="background-white"><div class="center">{:/nomarkdown}
+
+[](/assets/images/faasr_logo_white.png)
+
 ### <i class="fas fa-cubes"></i> What is FaaSr?
 
 FaaSr is a package that makes it easy for developers to create R functions and workflows that can run in the cloud, on-demand, based on triggers - such as timers, or repository commits. It is built for Function-as-a-Service (FaaS) cloud computing, and supports both widely-used commercial (GitHub Actions, AWS Lambda, IBM Cloud) and open-source platforms (OpenWhisk). It is also built for cloud storage, and supports the S3 standard also widely used in commercial (AWS S3), open-source (Minio) and research platforms (Open Storage Network)
