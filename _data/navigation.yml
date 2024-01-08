@@ -1,7 +1,7 @@
 # main links
 main:
- - title: "Get started"
-   url: /getstarted/
+  - title: "Get started"
+    url: /getstarted/
 #  - title: "Try"
 #    url: /trial/
 #  - title: "Documentation"
