@@ -18,6 +18,11 @@ FaaSr is a package that makes it easy for developers to create R functions and w
 
 With FaaSr, you can focus on developing the R functions, and leave dealing with the idiosyncrasies of different FaaS platforms and their APIs to the FaaSr package.
 
+*[<i class="fab fa-youtube" aria-hidden="true"></i> Introduction to FaaSr](
+https://youtu.be/r9bHyQSUPvs)*
+
+{% include video id="r9bHyQSUPvs" provider="youtube" %}
+
 ### <i class="fas fa-cubes"></i>  What can I use FaaSr for?
 
 Originally developed to support event-driven, on-demand automated execution workflows for forecasting, FaaSr can be also useful in applications such as automated data quality assurance/control, and in general for applications where:
@@ -55,7 +60,3 @@ FaaSr uses Docker and cloud computing/storage APIs (Application Programming Inte
 * The FaaSr package takes care of using cloud provider specific APIs to 1) handle the passing of arguments to your function, 2) handle data transfers from/to S3 buckets, and 3) trigger the execution of “downstream” function(s) in your workflow
 
 In other words, FaaSr deals with the specifics/complexities of multiple cloud APIs and exposes to you a simple interface that is consistent across providers.
-
-### <i class="fas fa-cubes"></i> How do I get started?
-
-Coming soon! The first public release of FaaSr is currently under active development with a target release in Fall'23 - please contact us if you would like to learn more about it.
