@@ -6,6 +6,10 @@ header:
   overlay_image: /assets/images/texture.png
 ---
 
-## <i class="fas fa-envelope"></i> Send an email to the project development lead
+## <i class="fas fa-envelope"></i> Project PIs
 
-Dr. Renato Figueiredo <i class="far fa-envelope"></i> ![Email](/assets/images/email_snapshot_rf_3.png)
+Dr. Renato Figueiredo, University of Florida <i class="far fa-envelope"></i> ![Email](/assets/images/email_snapshot_rf_3.png)
+
+Dr. R. Quinn Thomas, Virginia Tech
+
+Dr. Cayelan C. Carey, Virginia Tech
