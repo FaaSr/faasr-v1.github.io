@@ -12,13 +12,15 @@ header:
 
 ## <i class="fas fa-cogs"></i> Package vignettes
 
-[Introduction to FaaSr](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/faasr.html)
+(Currently link to GitHub repo - these will be linked to CRAN once FaaSr is published there)
 
-[Example single function]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/singlefunction.html))
+[Introduction to FaaSr](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/faasr.Rmd)
 
-[Example two-function workflow]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/twofunctionworkflow.html))
+[Example single function]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/singlefunction.Rmd))
 
-[Accessing S3 data in FaaSr]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/S3access.html))
+[Example two-function workflow]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/twofunctionworkflow.Rmd))
 
-[Logging and debugging in FaaSr]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/logging.html))
+[Accessing S3 data in FaaSr]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/S3access.Rmd))
+
+[Logging and debugging in FaaSr]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/logging.Rmd))
 
