@@ -6,67 +6,19 @@ header:
   overlay_image: /assets/images/texture.png
 ---
 
-## <i class="fab fa-docker"></i> Try Evio out for the first time
+## <i class="fab fa-docker"></i> Try FaaSr out for the first time
 
-[Use trial accounts and Docker containers to test-drive Evio](/trial)
+[Follow the FaaSr tutorial to get started](https://github.com/FaaSr/FaaSr-tutorial)
 
-## <i class="fas fa-cogs"></i> Deploy Evio nodes 
+## <i class="fas fa-cogs"></i> Package vignettes
 
-[Deploy Docker EVio nodes (x86)](/trial)
+[Introduction to FaaSr](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/faasr.html)
 
-[Deploy Evio nodes from Debian package (x86 and Raspberry Pi)](/install)
+[Example single function]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/singlefunction.html))
 
-## <i class="fas fa-cogs"></i> Deploy Evio Boostrap Server
+[Example two-function workflow]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/twofunctionworkflow.html))
 
-[Deploy Evio bootstrap XMPP/TURN server on AWS](/AWSbootstrap)
+[Accessing S3 data in FaaSr]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/S3access.html))
 
-## <i class="fas fa-cogs"></i> Use Evio to deploy Kubernetes across multiple edge providers
+[Logging and debugging in FaaSr]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/logging.html))
 
-[Kubernetes deployment with Flannel](/flannel)
-
-## <i class="fas fa-lightbulb"></i> Understand the Evio architecture 
-
-[EdgeVPN.io architecture overview](/architecture)
-
-[EdgeVPN.io architecture overview - video](https://www.youtube.com/watch?v=cdALqov35Zk)
-
-## <i class="fas fa-lightbulb"></i> Understand Evio configuration
-
-[Configuring EVio nodes - template and basic configuration](/configbasics) 
-
-[Configuring EVio nodes - complete description](/configfile)
-
-## <i class="fas fa-tools"></i> Troubleshooting
-
-[Troubleshooting and reporting bugs](/troubleshoot)
-
-[Open issues](https://github.com/EdgeVPNio/evio/issues)
-
-[Join our user's list to post questions](https://groups.io/g/EdgeVPN)
-
-
-## <i class="fas fa-book"></i> Additional deployment and configuration options and helpful resources
-
-[Set up STUN and TURN servers](/stunturn)
-
-[Configuring Openfire XMPP and EdgeVPN.io with x509 certificate-based authentication](/openfireconfig)
-
-[Kubernetes integration and deployment options](/kubernetes)
-
-[Kubernetes deployment with Evio CNI plugin](/cniplugin)
-
-[Configure and deploy Docker Openfire XMPP server](/openfiredocker)
-
-[Step-by-step XMPP/TURN/MySQL Evio bootstrap server deployment in AWS](https://github.com/EdgeVPNio/edgevpnio.github.io/wiki/Deploying-all-in-one-XMPP-STUN-TURN-server-with-containers)
-
-[Step-by-step deployment of Flannel+Evio Kubernetes cluster from scratch](https://github.com/EdgeVPNio/edgevpnio.github.io/wiki/Demo-of-Kubernetes-using-Flannel-over-EdgeVPN.io)
-
-[Building EdgeVPN.io from source](/build)
-
-[Test Evio with multiple containers in a single host](/edgevpninabox)
-
-[The EdgeVPN.io wiki](https://github.com/EdgeVPN/edgevpn.github.io/wiki)
-
-[An introduction to NAT traversal and STUN/TURN](https://temasys.io/webrtc-ice-sorcery/)
-
-[Another useful documentat on NAT traversal](https://www.netmanias.com/en/post/techdocs/6062/nat-network-protocol/nat-behavioral-requirements-as-defined-by-the-ietf-rfc-4787-part-2-filtering-behavior)
