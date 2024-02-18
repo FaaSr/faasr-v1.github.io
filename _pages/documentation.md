@@ -12,15 +12,14 @@ header:
 
 ## <i class="fas fa-cogs"></i> Package vignettes
 
-(Currently link to GitHub repo - these will be linked to CRAN once FaaSr is published there)
 
-[Introduction to FaaSr](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/faasr.Rmd)
+[Introduction to FaaSr](https://faasr.io/_pages/faasr.html)
 
-[Example single function]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/singlefunction.Rmd))
+[Example single function](https://faasr.io/_pages/singlefunction.html)
 
-[Example two-function workflow]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/twofunctionworkflow.Rmd))
+[Example two-function workflow](https://faasr.io/_pages/twofunctionworkflow.html)
 
-[Accessing S3 data in FaaSr]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/S3access.Rmd))
+[Accessing S3 data in FaaSr](https://faasr.io/_pages/S3access.html)
 
-[Logging and debugging in FaaSr]([/install](https://github.com/FaaSr/FaaSr-package/blob/main/vignettes/logging.Rmd))
+[Logging and debugging in FaaSr](https://faasr.io/_pages/logging.html)
 
