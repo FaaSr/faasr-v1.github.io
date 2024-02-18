@@ -9,7 +9,7 @@ header:
 ## <i class="fas fa-users"></i> [Join the FaaSr users' group](https://groups.io/g/FaaSr)
 to ask questions and connect with other users
 
-## <i class="fab fa-github"></i> [Submit an issue on GitHub](https://github.com/FaaSr/FaaSr-Package)
+## <i class="fab fa-github"></i> [Submit an issue on GitHub](https://github.com/FaaSr/FaaSr-package/issues)
 if you would like to report a bug or feature request
 
 ## <i class="fas fa-envelope"></i> Send an email to the project development leads
