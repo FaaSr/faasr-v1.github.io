@@ -21,5 +21,7 @@ header:
 
 [Accessing S3 data in FaaSr](https://faasr.io/_pages/S3access.html)
 
+[Configuring credentials in FaaSr](https://faasr.io/_pages/credentials.html)
+
 [Logging and debugging in FaaSr](https://faasr.io/_pages/logging.html)
 
