@@ -8,7 +8,10 @@ header:
 
 # Install stable release from CRAN
 
-Coming soon!
+```
+install.packages('FaaSr')
+library('FaaSr')
+```
 
 ## Install development release from GitHub
 
