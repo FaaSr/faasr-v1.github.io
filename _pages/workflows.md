@@ -12,12 +12,10 @@ FaaSr workflows are configured in a plain text file that follows the JSON format
 
 ## Example workflows
 
-You can find example workflows to serve as templates or starting points for your own work. You may download the example workflows (.json files) from the repositories below to your desktop, and then upload to the [FaaSr workflow builder Shiny app](https://faasr.shinyapps.io/faasr-json-builder/) ti visualize and edit them graphically.
+These example workflows can serve as templates/starting points for your own work:
 
 [FaaSr tutorial repository](https://github.com/FaaSr/FaaSr-tutorial) has examples for a simple 2-node sequential workflow graph for GitHub Actions, OpenWhisk, and AWS Lambda, as well as a more complex graph where execution is parallelized.
 
-[neon4cast example](https://github.com/FaaSr/neon4cast-FaaSr-example) has examples for a simple single-node workflow, as well as a more complex graph where execution is parallelized, for an ecological forecasting application.
-
-[iDigBio example](https://github.com/renatof/faasr_ridigbio_example) has an example of a simple single-node workflow for a biodiversity application.
+[FaaSr examples repository](https://github.com/FaaSr/FaaSr-examples) has examples in domains including ecological forecasting and biodiversity. Feel free to add pull request with other examples that have worked for you!
 
 
