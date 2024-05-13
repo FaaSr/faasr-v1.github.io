@@ -15,6 +15,8 @@ header:
 
 [Introduction to FaaSr](https://faasr.io/_pages/faasr.html)
 
+[User's manual](https://faasr.io/_pages/user_manual.html)
+
 [Example single function](https://faasr.io/_pages/singlefunction.html)
 
 [Example two-function workflow](https://faasr.io/_pages/twofunctionworkflow.html)
