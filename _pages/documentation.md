@@ -25,3 +25,4 @@ header:
 
 [Logging and debugging in FaaSr](https://faasr.io/_pages/logging.html)
 
+[Testing local workflow execution in your desktop](https://faasr.io/_pages/localtest.html)
