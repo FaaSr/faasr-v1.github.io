@@ -275,9 +275,9 @@ requires a valid list returned from a previous execution of
 provided as input for <code>faasr()</code>. Their respective credentials
 are specified in the credentials file also provided as input for
 <code>faasr()</code>.</p>
-<p>Example:
-<code>mylist &lt;- faasr(json_path=&quot;workflow_file.json&quot;, env_path=&quot;credentials_file&quot;)</code>
-<code>mylist$register_workflow()</code></p>
+<p>Example:</p>
+<pre><code>mylist &lt;- faasr(json_path=&quot;workflow_file.json&quot;, env_path=&quot;credentials_file&quot;)
+mylist$register_workflow()</code></pre>
 <p>In the example above, the <code>mylist</code> list returned from the
 <code>faasr()</code> function is used to register a workflow</p>
 </div>
@@ -288,10 +288,10 @@ are specified in the credentials file also provided as input for
 with a FaaS cloud provider. It requires a valid list returned from a
 previous execution of <code>faasr()</code> that has been registered with
 cloud providers using <code>$rergister_workflow()</code></p>
-<p>Example:
-<code>mylist &lt;- faasr(json_path=&quot;workflow_file.json&quot;, env_path=&quot;credentials_file&quot;)</code>
-<code>mylist$register_workflow()</code>
-<code>mylist$invoke_workflow()</code></p>
+<p>Example:</p>
+<pre><code>mylist &lt;- faasr(json_path=&quot;workflow_file.json&quot;, env_path=&quot;credentials_file&quot;)
+mylist$register_workflow()
+mylist$invoke_workflow()</code></pre>
 </div>
 <div id="set_workflow_timer" class="section level3">
 <h3>set_workflow_timer</h3>
@@ -302,10 +302,10 @@ from a previous execution of <code>faasr()</code> that has been
 registered with cloud providers using <code>$rergister_workflow()</code>
 The required argument <code>cron</code> is a string that <a href="https://en.wikipedia.org/wiki/Cron">follows the cron
 format</a></p>
-<p>Example:
-<code>mylist &lt;- faasr(json_path=&quot;workflow_file.json&quot;, env_path=&quot;credentials_file&quot;)</code>
-<code>mylist$register_workflow()</code>
-<code>mylist$set_workflow_timer(&quot;*/10 * * * *&quot;)</code></p>
+<p>Example:</p>
+<pre><code>mylist &lt;- faasr(json_path=&quot;workflow_file.json&quot;, env_path=&quot;credentials_file&quot;)
+mylist$register_workflow()
+mylist$set_workflow_timer(&quot;*/10 * * * *&quot;)</code></pre>
 </div>
 <div id="unset_workflow_timer" class="section level3">
 <h3>unset_workflow_timer</h3>
@@ -314,11 +314,11 @@ format</a></p>
 <code>$set_workflow_timer</code>. It requires a valid list returned from
 a previous execution of <code>faasr()</code> that has been registered
 with cloud providers using <code>$rergister_workflow()</code></p>
-<p>Example:
-<code>mylist &lt;- faasr(json_path=&quot;workflow_file.json&quot;, env_path=&quot;credentials_file&quot;)</code>
-<code>mylist$register_workflow()</code>
-<code>mylist$set_workflow_timer(&quot;*/10 * * * *&quot;)</code>
-<code>mylist$unset_workflow_timer()</code></p>
+<p>Example:</p>
+<pre><code>mylist &lt;- faasr(json_path=&quot;workflow_file.json&quot;, env_path=&quot;credentials_file&quot;)
+mylist$register_workflow()
+mylist$set_workflow_timer(&quot;*/10 * * * *&quot;)
+mylist$unset_workflow_timer()</code></pre>
 </div>
 </div>
 <div id="cloud-side-faasr-functions" class="section level2">
@@ -347,9 +347,9 @@ folder where the file to be downloaded is stored. This is an optional
 argument that defaults to <code>&quot;.&quot;</code></p>
 <p><code>local_file</code> is a string with the name for the file
 downloaded from the S3 bucket. This is a required arguemnt.</p>
-<p>Examples:
-<code>faasr_get_file(remote_folder=&quot;myfolder&quot;, remote_file=&quot;myinput1.csv&quot;, local_file=&quot;input1.csv&quot;)</code>
-<code>faasr_get_file(server_name=&quot;My_Minio_Bucket&quot;, remote_file=&quot;myinput2.csv&quot;, local_file=&quot;input2.csv&quot;)</code></p>
+<p>Examples:</p>
+<pre><code>faasr_get_file(remote_folder=&quot;myfolder&quot;, remote_file=&quot;myinput1.csv&quot;, local_file=&quot;input1.csv&quot;)
+faasr_get_file(server_name=&quot;My_Minio_Bucket&quot;, remote_file=&quot;myinput2.csv&quot;, local_file=&quot;input2.csv&quot;)</code></pre>
 </div>
 <div id="faasr_put_file" class="section level3">
 <h3>faasr_put_file</h3>
@@ -372,9 +372,9 @@ folder where the file is to be uploaded to. This is an optional argument
 that defaults to <code>&quot;&quot;</code></p>
 <p><code>remote_file</code> is a string with the name for the file to be
 uploaded to the S3 bucket. This is a required arguemnt.</p>
-<p>Examples:
-<code>faasr_put_file(local_file=&quot;output.csv&quot;, remote_folder=&quot;myfolder&quot;, remote_file=&quot;myoutput.csv&quot;)</code>
-<code>faasr_get_file(server_name=&quot;My_Minio_Bucket&quot;, local_file=&quot;output.csv&quot;, remote_file=&quot;myoutput.csv&quot;)</code></p>
+<p>Examples:</p>
+<pre><code>faasr_put_file(local_file=&quot;output.csv&quot;, remote_folder=&quot;myfolder&quot;, remote_file=&quot;myoutput.csv&quot;)
+faasr_get_file(server_name=&quot;My_Minio_Bucket&quot;, local_file=&quot;output.csv&quot;, remote_file=&quot;myoutput.csv&quot;)</code></pre>
 </div>
 <div id="faasr_get_folder_list" class="section level3">
 <h3>faasr_get_folder_list</h3>
@@ -390,9 +390,9 @@ configuration JSON file is used.</p>
 <p><code>faasr_prefix</code> is a string with the prefix of the folder
 in the S3 bucket. This is an optional argument that defaults to
 <code>&quot;&quot;</code></p>
-<p>Examples:
-<code>mylist1 &lt;- faasr_get_folder_list(server_name=&quot;My_Minio_Bucket&quot;, faasr_prefix=&quot;myfolder&quot;)</code>
-<code>mylist2 &lt;- faasr_get_folder_list(server_name=&quot;My_Minio_Bucket&quot;, faasr_prefix=&quot;myfolder/mysubfolder&quot;)</code></p>
+<p>Examples:</p>
+<pre><code>mylist1 &lt;- faasr_get_folder_list(server_name=&quot;My_Minio_Bucket&quot;, faasr_prefix=&quot;myfolder&quot;)
+mylist2 &lt;- faasr_get_folder_list(server_name=&quot;My_Minio_Bucket&quot;, faasr_prefix=&quot;myfolder/mysubfolder&quot;)</code></pre>
 </div>
 <div id="faasr_delete_file" class="section level3">
 <h3>faasr_delete_file</h3>
@@ -409,9 +409,9 @@ folder where the file is to be deleted from. This is an optional
 argument that defaults to <code>&quot;&quot;</code></p>
 <p><code>remote_file</code> is a string with the name for the file to be
 deleted from the S3 bucket. This is a required arguemnt.</p>
-<p>Examples:
-<code>faasr_delete_file(remote_folder=&quot;myfolder&quot;, remote_file=&quot;myoutput.csv&quot;)</code>
-<code>faasr_delete_file(server_name=&quot;My_Minio_Bucket&quot;, remote_file=&quot;myoutput.csv&quot;)</code></p>
+<p>Examples:</p>
+<pre><code>faasr_delete_file(remote_folder=&quot;myfolder&quot;, remote_file=&quot;myoutput.csv&quot;)
+faasr_delete_file(server_name=&quot;My_Minio_Bucket&quot;, remote_file=&quot;myoutput.csv&quot;)</code></pre>
 </div>
 <div id="faasr_arrow_s3_bucket" class="section level3">
 <h3>faasr_arrow_s3_bucket</h3>
@@ -428,11 +428,12 @@ in the S3 bucket. This is an optional argument that defaults to
 <code>&quot;&quot;</code></p>
 <p>It returns a list that is subsequently used with the Arrow
 package.</p>
-<p>Examples: <code>mys3 &lt;- faasr_arrow_s3_bucket()</code>
-<code>myothers3 &lt;- faasr_arrow_s3_bucket(server_name=&quot;My_Minio_Bucket&quot;, faasr_prefix=&quot;myfolder&quot;)</code>
-<code>frame_input1 &lt;- arrow::read_csv_arrow(mys3$path(file.path(folder, input1)))</code>
-<code>frame_input2 &lt;- arrow::read_csv_arrow(mys3$path(file.path(folder, input2)))</code>
-<code>arrow::write_csv_arrow(frame_output, mys3$path(file.path(folder, output)))</code></p>
+<p>Examples:</p>
+<pre><code>mys3 &lt;- faasr_arrow_s3_bucket()
+myothers3 &lt;- faasr_arrow_s3_bucket(server_name=&quot;My_Minio_Bucket&quot;, faasr_prefix=&quot;myfolder&quot;)
+frame_input1 &lt;- arrow::read_csv_arrow(mys3$path(file.path(folder, input1)))
+frame_input2 &lt;- arrow::read_csv_arrow(mys3$path(file.path(folder, input2)))
+arrow::write_csv_arrow(frame_output, mys3$path(file.path(folder, output)))</code></pre>
 </div>
 <div id="faasr_log" class="section level3">
 <h3>faasr_log</h3>
@@ -445,9 +446,9 @@ JSON file. This default can be overridden with
 file.</p>
 <p><code>log_message</code> is a string with the message to be
 logged.</p>
-<p>Example:
-<code>log_msg &lt;- paste0(&#39;Function compute_sum finished; output written to &#39;, folder, &#39;/&#39;, output, &#39; in default S3 bucket&#39;)</code>
-<code>faasr_log(log_msg)</code></p>
+<p>Example:</p>
+<pre><code>log_msg &lt;- paste0(&#39;Function compute_sum finished; output written to &#39;, folder, &#39;/&#39;, output, &#39; in default S3 bucket&#39;)
+faasr_log(log_msg)</code></pre>
 </div>
 </div>
 <div id="file-formats" class="section level2">
