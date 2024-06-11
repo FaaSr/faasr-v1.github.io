@@ -246,8 +246,8 @@ is important that you add logging information so you can debug these
 errors. Because FaaS functions are stateless, FaaSr also use cloud S3
 bucket storage to persist logging information.</p>
 </div>
-<div id="configuring-loggging-folder-in-s3" class="section level2">
-<h2>Configuring loggging folder in S3</h2>
+<div id="configuring-logging-folder-in-s3" class="section level2">
+<h2>Configuring logging folder in S3</h2>
 <p>By default, logs are stored in a folder named <code>FaaSrLog</code>
 in your configured S3 bucket. You can specify a different folder name in
 your JSON configuration file using the FaaSr JSON Builder, under the
@@ -267,10 +267,11 @@ function, with the following pattern as an example:</p>
 <pre><code>log_msg &lt;- paste0(&#39;Function compute_sum finished; output written to &#39;, folder, &#39;/&#39;, output, &#39; in default S3 bucket&#39;)
 faasr_log(log_msg)</code></pre>
 </div>
-<div id="checking-the-logs" class="section level2">
-<h2>Checking the logs</h2>
-<p>Since logs are stored in S3, you may use any S3-compatible client to
-browse the logs. For example, using <code>minioclient</code>:</p>
+<div id="accessing-logs" class="section level2">
+<h2>Accessing logs</h2>
+<p>Logs are stored in S3. You may use any S3-compatible client to browse
+the logs, or use FaaSr functions to help you list and download them.</p>
+<p>For example, using <code>minioclient</code>:</p>
 <p><code>mc_ls(&quot;play/faasr/FaaSrLog/&quot;)</code></p>
 <p>We’ll assume UUID <code>2f66208d-63eb-4fd9-b54b-7bebcc970421</code>
 in the examples below; please replace appropriately:</p>
@@ -279,6 +280,19 @@ in the examples below; please replace appropriately:</p>
 extension <code>.txt</code>. For example, the log for
 <code>Action1</code> would be:</p>
 <p><code>mc_cat(&quot;play/faasr/FaaSrLog/2f66208d-63eb-4fd9-b54b-7bebcc970421/Action1.txt&quot;)</code></p>
+<p>While minioclient helps you browse the log files server, FaaSr
+provides these following helper functions</p>
+<p><code>$get_log_df</code></p>
+<p>Queries for all logs in your S3 bucket and writes a data frame with
+this information to file named <code>faasr_output_logs.txt</code> in
+your current working directory.</p>
+<p><code>$get_log(&quot;2f66208d-63eb-4fd9-b54b-7bebcc970421&quot;)</code></p>
+<p>Downloads the logs from the S3 bucket for a particular UUID (which
+you can determine by inspecting <code>faasr_output_logs.txt</code>)</p>
+<p><code>$delete_log(&quot;2f66208d-63eb-4fd9-b54b-7bebcc970421&quot;)</code></p>
+<p>Deletes a specific log from the S3 bucket given its UUID</p>
+<p><code>$delete_log_date(&quot;2024-06-11&quot;)</code></p>
+<p>Deletes all logs older than (and including) the given date</p>
 </div>
 <div id="locating-specific-uuid" class="section level2">
 <h2>Locating specific UUID</h2>
