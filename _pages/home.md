@@ -48,7 +48,7 @@ To use FaaSr, you need:
 
 * A GitHub account and repository(ies) hosting your R functions
 * A cloud computing account with a supported FaaS provider (e.g. GitHub Actions, IBM Cloud OpenWhisk, or AWS Lambda)
-* A cloud storage account supporting S3 buckets (e.g. AWS S3, Open Storage Network, or a Minio service)
+* A cloud storage account supporting S3 buckets (e.g. AWS S3, Open Storage Network, or a Minio service). [This blog post](https://blog.djnavarro.net/posts/2022-03-17_using-aws-s3-in-r/) provides a nice introduction of uses of S3 in R, including how to obtain credentials for a small free tier account in AWS S3, which can be used for FaaSr.
 
 ### <i class="fas fa-cubes"></i>  In a nutshell, how does FaaSr work?
 
