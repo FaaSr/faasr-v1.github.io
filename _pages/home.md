@@ -47,8 +47,15 @@ In the typical case, to use FaaSr you:
 To use FaaSr, you need:
 
 * A GitHub account and repository(ies) hosting your R functions
-* A cloud computing account with a supported FaaS provider (e.g. GitHub Actions, IBM Cloud OpenWhisk, or AWS Lambda)
-* A cloud storage account supporting S3 buckets (e.g. AWS S3, Open Storage Network, or a Minio service). [This blog post](https://blog.djnavarro.net/posts/2022-03-17_using-aws-s3-in-r/) provides a nice introduction of uses of S3 in R, including how to obtain credentials for a small free tier account in AWS S3, which can be used for FaaSr.
+* A cloud computing account with a supported FaaS provider (e.g. GitHub Actions, AWS Lambda, and the open source OpenWhisk)
+* A cloud storage account supporting S3 buckets. There are many options here, including buckets free for research use ([OSN](https://openstoragenetwork.github.io/), [NRP](https://nrp.ai)) and test/development (Minio Play), and paid-for cloud-hosted services (AWS S3)
+
+### <i class="fas fa-cubes"></i>  I don't have yet access to S3 storage; how do I start?
+
+* Free temporary bucket for testing: The simplest way to get started is with the free test bucket of Minio Play as per the [FaaSr tutorial](https://github.com/FaaSr/FaaSr-tutorial). This only holds data temporarily, so it is intended only for testing
+* Free persistent bucket for US researchers: Sign up for an [ACCESS-CI](https://access-ci.org/) account, and request [a bucket through NRP](https://nrp.ai/documentation/userdocs/storage/ceph-s3/)
+* Free persistent bucket for US researchers: If you have an [ACCESS-CI allocation](https://openstoragenetwork.github.io/docs/allocations/), you can request to [apply your ACCESS credits towards creating storage buckets](https://openstoragenetwork.github.io/docs/portal/)
+* Paid persistent buckets for any users: There are several cloud providers (e.g. AWS S3) that offer S3 storage services. [This blog post](https://blog.djnavarro.net/posts/2022-03-17_using-aws-s3-in-r/) provides a nice introduction of uses of S3 in R, including how to obtain credentials for a small free tier account in AWS S3, which can be used for FaaSr.
 
 ### <i class="fas fa-cubes"></i>  In a nutshell, how does FaaSr work?
 
